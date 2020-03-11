@@ -23,6 +23,7 @@ address (---.19.265) untill it reaches the destination<br />
 UDP is similar except it does not follow the checksum scheme for faster transfer speeds.
 
 ### *4. What does setting up a server even mean?* <br /> *5. How a server resolves a request?*
-A Server is anything that serves to the clients (often multiple clients) requests.To understand it more clearly lets seperate Physical Servers and Web Servers. <br />
+A Server is anything that serves to the clients (often multiple clients) requests. A Server can store, query and retrieve data. <br />
+To understand it more clearly lets seperate Physical Servers and Web Servers. <br />
 WEB SERVERS's job is to act as a middleman between the physical servers and multiple clients, at the same time. When a request is sent by the client, they often have to work with multiple programming languages like PHP, Python etc and convert them to HTML files with CSS, Javascript etc. These programs ensure setting up proper client-server structure.<br />
 Google Apache and NginX are examples of Web Servers.<br />
