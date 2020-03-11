@@ -9,4 +9,4 @@ __c__.  Once the IP address is found, a connection is established using an inter
 request and sends out an HTTP response, which then the browser displays as HTML content. Requests for additional elements such as pictures, CSS and JavaScript
 are sent later.<br/>
 ### *3. Read up in brief about TCP and UDP*
-TCP and UDP are both intenet protocols 
+TCP and UDP are both intenet protocols.
