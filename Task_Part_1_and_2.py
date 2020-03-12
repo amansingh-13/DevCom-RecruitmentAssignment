@@ -23,13 +23,16 @@ class Book(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField(blank=True)
     isbn_id = models.BigIntegerField(unique=True)
-    author = models.CharField(max_length=50)
+    author_first_name = models.CharField(max_length=15)
+    author_last_name = models.CharField(max_length=25) # may incluse middle name too
     lender=models.ForeignKey(
         User, on_delete=models.CASCADE, default=uuid4, related_name='books')
     
     def __str__(self):
-        return self.name
+        return self.name+" : "+self.+author_first_name+" "+author_last_name
+    
     #add function to delete
+    
     class Meta:
         verbose_name = "Book Title"
         verbose_name_plural = "Book Titles"
