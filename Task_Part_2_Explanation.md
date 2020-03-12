@@ -1,1 +1,2 @@
-
+I couldn't find a lot of things related to this question...<br /> But maybe seperating first and last names will work as there will be lesser things to search for, we can display only the books which have same author's first name.<br />Other ways would include arranging the names in alphabetical order and indexing.<br />
+One particular thing I found interesting while researching was that whenever you try to fasten search process, you would end up increasing memory requirement.
