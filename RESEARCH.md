@@ -40,4 +40,4 @@ Another similar way would be to use Microsoft IIS. Here is what I found: <br />
 
 I couldn't find the use for 127.0.0.1 for setting up a server on your PC but figured out that it is a Special IP Address (localhost) used to establish an IP connection to the same PC. It is used to ensure the correct working of all Internet Protocols.<br />
 PS: I am not sure, but the method described above will work only if your IP address is static and if your ISP allows you to host a server.<br />
-PPS: Another thing I found out was that you can make personal webpages using Github (and Jekyll for additional features. This can't be used as an answer to **6.** but I made a basic one : https://feyn-aman.github.io/
+PPS: Another thing I found out was that you can make personal webpages using Github (and Jekyll for additional features. This can't be used as an answer to **6.** but I made a basic one which helped me learn some html: https://feyn-aman.github.io/
