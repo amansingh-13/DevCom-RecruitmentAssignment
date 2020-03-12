@@ -43,3 +43,12 @@ class Body(models.Model):
 
     def get_absolute_url(self):
         return '/org/' + self.str_id
+
+The first and last functions work together:
+
+- **save** provides str_id to the body. It is name if name=canonical_name otherwise it is canonical_name
+- **get_absolute_url** gives the url of the body using str_id, ..../**org/str_id**
+
+Eg. Name: Tinkerers' Lab ; Canonical Name: tl ; so the url is ..../**org/tl** <br />
+
+The second function is a standard function which gives back the name of the body <br />
