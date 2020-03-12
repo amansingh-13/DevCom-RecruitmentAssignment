@@ -7,3 +7,4 @@
 - https://tutorial.djangogirls.org/en/django_start_project/
 - https://www.wncc-iitb.org/wiki/index.php/Django
 - https://www.youtube.com/watch?v=JEMvYS3xbvY
+- https://www.reddit.com/r/django/comments/76a7uw/related_name_in_modelspy/
