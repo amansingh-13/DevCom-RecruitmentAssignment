@@ -54,7 +54,7 @@ The first and last functions work together:
 
 Eg. Name: Tinkerers' Lab ; Canonical Name: tl ; so the url is ..../**org/tl** <br />
 
-The second function is a standard function which gives back the name of the body <br />
+The *str* function is a standard function which gives back the name of the body <br />
 
  ```python
  class Meta:
@@ -82,9 +82,10 @@ Not sure what ordering does exactly, maybe it orders the way fields are to be en
         return self.parent.name + " --> " + self.child.name
  
  ```
- The peculiar thing about this part is that it does not crate a child class in the usual sense. In InstiApp all sub-bodies are also declared as an instance of the class Body. This class: **BodyChildRelation** just relates the body to sub-body. Now using the last function and the parent and child declaration (related_name is used as there are 2 foreign keys, and hence default won't work) any two bodies can be connected. 
+ The peculiar thing about this part is that it does not crate a child class in the usual sense. In InstiApp all sub-bodies are also declared as an instance of the class Body. This class: **BodyChildRelation** just relates the body to sub-body. As this is not a parent-child relation in the normal sense, any sort of tree structure can be made.<br />
+A relation is built by creating an instance of class BodyChildRelation. This relation can be used/viewed by printing the class which calls the *str* function, the output looks like : parent_name --> child name
 
- ```python
+```python
      class Meta:
         verbose_name = "Body-Child Relation"
         verbose_name_plural = "Body-Child Relations"
