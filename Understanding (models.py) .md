@@ -63,7 +63,10 @@ The second function is a standard function which gives back the name of the body
         ordering = ("name",)
  
  ```
- IDK
+When you ask the user to add a name (it is a field in class Body), it is ambiguous what you are referring to. So verbone_name is created, it will ask for a "Body" from the user instead of name (default verbose_name is set same as the field name). Similarly the plural is provided as django makes the default plural by adding 's' at the end of verbose_name.<br />
+Meta can be used to add stuff to the class outside the class<br />
+Not sure what ordering does exactly, maybe it orders the way fields are to be entered in by the user
+
  
  ```python
  class BodyChildRelation(models.Model):
@@ -76,10 +79,10 @@ The second function is a standard function which gives back the name of the body
         Body, on_delete=models.CASCADE, default=uuid4, related_name='parents')
 
     def __str__(self):
-        return self.parent.name + " --> " + self.child.nam
+        return self.parent.name + " --> " + self.child.name
  
  ```
-hbjb
+ The peculiar thing about this part is that it does not crate a child class in the usual sense. In InstiApp all sub-bodies are also declared as an instance of the class Body. This class: **BodyChildRelation** just relates the body to sub-body. Now using the last function and the parent and child declaration (related_name is used as there are 2 foreign keys, and hence default won't work) any two bodies can be connected. 
 
  ```python
      class Meta:
