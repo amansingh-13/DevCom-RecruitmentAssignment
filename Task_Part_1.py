@@ -9,6 +9,8 @@ class User(models.Model):
     hostel = models.CharField(max_length=20)
     phone_no = models.BigIntegerField(unique=True)
     
+    def delete_book
+    
     def __str__(self):
         return self.name
     
@@ -22,14 +24,12 @@ class Book(models.Model):
     description = models.TextField(blank=True)
     isbn_id = models.BigIntegerField(unique=True)
     author = models.CharField(max_length=50)
-    
     lender=models.ForeignKey(
         User, on_delete=models.CASCADE, default=uuid4, related_name='books')
     
     def __str__(self):
         return self.name
-    
-    
+    #add function to delete
     class Meta:
         verbose_name = "Book Title"
         verbose_name_plural = "Book Titles"
