@@ -27,3 +27,17 @@ A Server is anything that serves to the clients (often multiple clients) request
 To understand it more clearly lets seperate Physical Servers and Web Servers. <br />
 WEB SERVERS's job is to act as a middleman between the physical servers and multiple clients, at the same time. When a request is sent by the client, they often have to work with multiple programming languages like PHP, Python etc and convert them to HTML files with CSS, Javascript etc. These programs ensure setting up proper client-server structure.<br />
 Google Apache and NginX are examples of Web Servers.<br />
+
+### *6. How would you show your friend the html file you made if you are not allowed to share your code with him or upload your website?*
+One way to do this would be to install XAMPP (WAMP for windows) on your device. WAMP is a web sever 'package' which includes Apache as the Web Server, MySQL, PHP, and your PC as the physical Server.<br />
+Another similar way would be to use Microsoft IIS. Here is what I found: <br />
+
+- Go to Control Panel > Programs and Features and use 'Turn Windows feature on or off' to activate Internet Information Services option
+- After this, download Microsoft IIS by going to 127.0.0.1 or otherwise
+- Use Microsoft IIS to setup your html page and specify which port number on the router you want to use (eg 314.15.19.265:**75** for port number 75)
+- A few more ISP's settings need to be changed and then you are done (see video in README.md)
+- Anyone can view your page by writing 314.15.19.265:75 in the URL bar
+
+I couldn't find the use for 127.0.0.1 for setting up a server on your PC but figured out that it is a Special IP Address (localhost) used to establish an IP connection to the same PC. It is used to ensure the correct working of all Internet Protocols.<br />
+PS: I am not sure, but the method described above will work only if your IP address is static and if your ISP allows you to host a server.<br />
+PPS: Another thing I found out was that you can make personal webpages using Github (and Jekyll for additional features. This can't be used as an answer to **6.** but I made a basic one : https://feyn-aman.github.io/
