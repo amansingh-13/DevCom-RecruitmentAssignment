@@ -29,7 +29,7 @@ class Book(models.Model):
         User, on_delete=models.CASCADE, default=uuid4, related_name='books')
     
     def __str__(self):
-        return self.name+" : "+self.+author_first_name+" "+author_last_name
+        return self.name+" : "+self.author_first_name+" "+self.author_last_name
     
     #add function to delete
     
