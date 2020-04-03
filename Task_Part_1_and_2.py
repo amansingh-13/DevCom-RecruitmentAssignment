@@ -9,7 +9,7 @@ class User(models.Model):
     hostel = models.CharField(max_length=20)
     phone_no = models.BigIntegerField(unique=True)
     
-    def delete_book
+    #def delete_book
     
     def __str__(self):
         return self.name
@@ -31,7 +31,6 @@ class Book(models.Model):
     def __str__(self):
         return self.name+" : "+self.author_first_name+" "+self.author_last_name
     
-    #add function to delete
     
     class Meta:
         verbose_name = "Book Title"
